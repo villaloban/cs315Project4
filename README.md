@@ -1,10 +1,8 @@
 Student Info: Name: Anthony Villalobos Student ID: 008394627 Repo Link: https://github.com/villaloban/cs315Project4.git
 
-Collaboration & Sources: 
+Collaboration & Sources: In this project my main collaberation source was our previous project looking back at the work in the main from the previous project was very helpeful especially when navigating around filesystems. It was also a good reference into how the decoding process would work as were basically just reversing what we did in the previose project. I also collaberated with gemma and liam on if they were having similar issues to me. Finally I collaberated with AI on an issue I was having that will later be explained in the testing and status portion.
 
-
-
-Implementation & Details: 
+Implementation & Details: In this project we are given a header file and told to reconstruct a huffman tree from the header file and then decode the .code file into a decoded_tokens output file. We have three main functions in this project, readheader which is stored in the main, buildfromheader and decode. Readheader reads the header file and stores the word and bits as a pair. The buildfromheader function recrates the huffman tree from the pair. We traverse left if the bit is a 0 and right if the bit is a one and store the value with the word at that postion. Finally the decode function, we traverse the tree until we reach a word then we write it to the ouput file and go back to the root and do this until were done reading the code file. Finally in the main we read the files make sure every file is created and opened safely and then create our output file with the extension .tokens_decoded
 
 
 Testing & Status: The testing and status of output in this project worked similarily to our last project where we we created a directory called input_output and given files from our professor compared our output that that was created with his files and used diff to see the matches and differences. Our program was supposed to ouput a .tokens_decoded file with a list of tokens that matched the orginal tokens. Using the command "bash compile_and_test_project4.bash" we see an output of 
