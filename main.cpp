@@ -29,6 +29,7 @@ int main(int argc, char *argv[]) {
     const std::string codeFile = dirName + "/" + std::string(argv[2]);
 
     std::string baseName = std::string(argv[2]);
+    //have to cut the .code out of the filename in order for it to match exact
     if (baseName.size() > 5)
         baseName = baseName.substr(0, baseName.size() - 5);
 
